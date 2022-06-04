@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back ground</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 1000px;
+            height: 400px;
+            background-color: grey;
+            background-image: url(img/wall.jfif);
+            background-repeat: no-repeat;
+           
+            /* background-size: 50% 50%;
+            =>배경 이미지 사이즈 조절
+            =>값을 하나만 넣으면 가로값이 적용됨
+            (세로는 자동으로 가로값 비율에 맞춰 늘어나거나 줄어듬) 
+            =>값을 두 개 넣을 때는 첫값은 x(가로값) 두번째 값은 y(세로값)*/
+
+            /* background-size: cover;
+            =>이미지 비율에 맞춰서 가득 채움
+            =>제일 많이 사용 */
+
+            /* background-size: contain;
+            =>이미지 비율에 맞춰 가로값이나 세로값에 맞는 부분만큼 가득 채움 */
+
+            /* background-position: 500px 100px; */
+            /* background-position: center; */
+            background-position: top;
+            /* =>배경의 위치를 조절할 수 있음
+            =>첫번째 값은 x(가로값) 두번째 값은 y(세로값)
+            =>수치로 값을 지정할 수도 있고, top, left, right, bottom, center 로 지정할 수도 있음 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

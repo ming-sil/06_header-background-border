@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+            margin: 100px auto;
+           
+            /* border-radius: 30px; */
+            /* =>엘리먼트의 둥글기 값을 추가할 수 있음 */
+            
+            /* border-radius: 50%; */
+            /* =>엘리먼트를 원형으로 만들때 50%추가하면 됨 */
+
+            border-top-left-radius: 50px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 150px;
+            border-bottom-left-radius: 200px;
+        }
+
+        .toggle{
+            width: 200px;
+            height: 100px;
+            background-color: grey;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 100px auto;
+        }
+
+        .button{
+            width: 90px;
+            height: 90px;
+            background-color: darkgray;
+            border-radius: 50%;
+            box-shadow: 5px 3px 20px rgba(0, 0, 0, 50%);
+            padding: 7px;
+            box-sizing: border-box;          
+        }
+
+        .top{
+            width: 100%;
+            height: 100%;
+            background-color: lightgrey;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <div class="toggle">
+        <div class="button">
+            <div class="top"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

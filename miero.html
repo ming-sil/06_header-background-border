@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miero</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .background{
+            width: 1920px;
+            /* width: 100%; */
+            /* =>블럭요소는 기본적으로 가로값이 가득 찬 상태기 때문에
+              굳이 width값을 정의 할 필요는 없음 */
+            height: 800px;
+            /* =>높이값은 필수(블럭요소니까ㅏㅏㅏ) */
+            background-color: gray;
+           
+            background-image: url(img/miero.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* =>배경 이미지는 화면 크기에 따라서 이미지의 특정 부분이 가려지기 때문에 
+            보여주고자하는 제품에 문제가 없을 때 사용 */
+            background-position: top;
+            /* =>축약가능 */
+
+            padding: 250px 0 0 100px;
+            box-sizing: border-box;
+            /* margin: 0 auto; */
+        }
+
+        .wrap{
+            width: 500px;
+            height: auto;
+            /* background-color: gray; */
+        }
+        
+        .title{
+            width: 100%;
+            font-size: 50px;
+            font-weight: 900;
+            color: #fff;
+            /* =>부모한테 폰트스타일을 적용하게 되면 자동으로 자식이 폰트스타일을 상속받음 
+                but h태그 기본속성때문에 형태가 달라질 수 있음*/
+           
+            letter-spacing: -2px;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 42%);
+        }
+
+        .icon_wrap{
+            width: 120px;
+            /* height: 30px; */
+            margin-top: 30px;
+            /* background-color: salmon; */
+        }
+       
+        .icon{
+            width: 33.3333px;
+            height: 30px;
+            border: 1px solid #fff;
+            box-sizing: border-box;
+            float: left;
+            margin-right: 10px;
+            padding: 5px 7px;
+            box-sizing: border-box;
+        }
+
+        .icon:last-child{
+            margin-right: 0;
+        }
+
+        .img_1{
+            width: 100%;
+            height: 100%;
+            background-image: url(img/facebook-logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .img_2{
+            width: 100%;
+            height: 100%;
+            background-image: url(img/instagram.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .img_3{
+            width: 100%;
+            height: 100%;
+            background-image: url(img/youtube.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="background">
+       
+        <div class="wrap">
+           
+            <h1 class="title">
+                아름다움을<br>
+                디자인하다
+            </h1>
+            
+            <div class="icon_wrap">
+                <div class="icon">
+                    <a href="#"><div class="img_1"></div></a>
+                </div>
+                <div class="icon">
+                    <a href="#"><div class="img_2"></div></a>
+                </div>
+                <div class="icon">
+                    <a href="#"><div class="img_3"></div></a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
